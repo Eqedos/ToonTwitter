@@ -40,7 +40,6 @@ const upload = multer({ storage });
 
 app.post("auth/register", upload.single("picture"),register);
 
-
 app.use("/auth", authRoutes);
 /*MongoDB*/
 const Port = process.env.PORT || 5000;
